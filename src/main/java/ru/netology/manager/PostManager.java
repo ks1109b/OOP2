@@ -3,18 +3,15 @@ package ru.netology.manager;
 import ru.netology.domain.Post;
 
 public class PostManager {
-    private Post post;
+    private Post[] posts;
 
-    public Post[] searchPost() {
-        int ownerId = post.getOwnerId();
-        int date = post.getDate();
-        String query = post.getText();
+    public Post[] searchPost(int ownerId, String domain, String query, boolean owners_only, int count, int offset) {
+
         return null;
     }
 
-    public void deletePost() {
-        int ownerId = post.getOwnerId();
-        int postId = post.getId();
+    public void deletePost(int ownerId, int postId) {
+
         System.out.println();
     }
 }
